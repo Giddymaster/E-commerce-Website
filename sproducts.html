@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COM_WEB</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>    
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li iid="lg-bag"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </div>
+
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="single-pro-details">
+            <h6>Home / Shirt</h6>
+            <h4>Mens Fashion Shirts</h4>
+            <h2>$ 85.00</h2>
+            <select>
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add to cart</button>
+            <h4>Products Details</h4>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis illo rem perferendis nihil beatae dolorem ipsam natus, eum maiores doloremque ea, totam suscipit, hic unde delectus quia. Quis, ad! Asperiores.</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>KES 78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <button onclick="addToCart('Cartoon Astronaut Shirt', 'KES 78', 'img/products/f1.jpg')">Add to Cart</button>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>KES 78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>KES 78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt="">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon Astronaut Shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>KES 78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+
+    </section>
+ 
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up for Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>Special Offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+  
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 0300 Parkroad, Nairobi.</p>
+            <p><strong>Phone:</strong> +254714212010</p>
+            <p><strong>Hours:</strong> 0800hrs - 1830hrs, Monday - Saturday.</p>
+            <div class="follow">
+                <h4>Follow US</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-tiktok"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p4>From App Store or Google Play</p4>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2023, Freelancer Giddyman - Website expert, HTML/CSS U& Js, Python & Django framework,Java,PhP,... etc.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        // Function to add item to cart
+        function addToCart(itemName, price, imageUrl) {
+            // Retrieve existing cart data from localStorage
+            const existingCartData = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the item is already in the cart
+            const existingItem = existingCartData.find(item => item.name === itemName);
+
+            if (existingItem) {
+                // If the item is already in the cart, update its quantity
+                existingItem.quantity++;
+            } else {
+                // If the item is not in the cart, add it as a new item
+                existingCartData.push({
+                    name: itemName,
+                    price: price,
+                    quantity: 1,
+                    imageUrl: imageUrl
+                });
+            }
+
+            // Save the updated cart data back to localStorage
+            localStorage.setItem('cart', JSON.stringify(existingCartData));
+
+            // Show a message to indicate that the item was added to the cart
+            alert('One item added to the cart');
+        }
+
+        // Function to handle click event on "Add to Cart" button
+        const addToCartButtons = document.querySelectorAll('.pro button');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const proContainer = button.closest('.pro');
+                const itemName = proContainer.querySelector('h5').textContent;
+                const price = proContainer.querySelector('h4').textContent;
+                const imageUrl = proContainer.querySelector('img').getAttribute('src');
+
+                addToCart(itemName, price, imageUrl);
+            });
+        });
+    </script>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimgs = document.getElementsByClassName("small-img");
+    
+        for (let i = 0; i < smallimgs.length; i++) {
+            smallimgs[i].onclick = function() {
+                MainImg.src = smallimgs[i].src;
+            };
+        }
+    </script>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
